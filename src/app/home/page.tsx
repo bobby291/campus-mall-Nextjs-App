@@ -94,7 +94,7 @@ const products = [
         location: 'University of Abuja',
         isNew: false,
         vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
-        media:  ''
+        media:  '/images/beeds.jpg',
     },
 ];
 
@@ -114,7 +114,7 @@ export default function HomePage() {
                     </span>
                     <Bell className="w-5 h-5 text-gray-950" />
                 </div>
-                <span className="text-xl border bg-blue-950 px-6 py-4 rounded-full text-white font-bold">
+                <span className="text-xl border bg-blue-950 px-3 py-2 mt-2 rounded-full text-white font-bold">
                     Bayero University, Kano
                 </span>
                 
@@ -187,7 +187,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Bottom Navbar */}
-                <div className="fixed bottom-0 left-0 right-0 bg-white border-t font-semibold py-2 px-6 flex justify-between items-center text-center text-xs text-gray-900">
+                <div className="fixed bottom-0 left-0 right-0 bg-white border-none font-semibold py-2 px-6 flex justify-between cursor-pointer items-center text-center text-xs text-gray-900">
                     <div className="flex flex-col items-center ">
                         <Home className="w-5 h-5 hover:bg-gray-400 "/>
                         <span>Home</span>
