@@ -12,7 +12,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'LaceUp Footies', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'LaceUp Footies', avatar: '/images/store (8).jpg' },
         media:  '/images/store (3).jpg'
     },
     {
@@ -22,7 +22,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (6).jpg',
     },
     {
@@ -32,7 +32,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (8).jpg',
     },
     {
@@ -42,7 +42,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (7).jpg',
     },
     {
@@ -52,7 +52,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (6).jpg',
     },
     {
@@ -62,7 +62,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (5).jpg',
     },
     {
@@ -72,7 +72,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (4).jpg',
     },
     {
@@ -82,7 +82,7 @@ const products = [
         price: 'N500',
         location: 'University of Abuja',
         isNew: false,
-        vendor: { id: 'vendor1', name: 'Blessing', avatar: '/images/store (8).jpg' },
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  '/images/store (3).jpg',
     },
 
@@ -93,7 +93,7 @@ const products = [
         price: 'N2000',
         location: 'University of Abuja',
         isNew: false,
-        vendor: 'Blessing Tech',
+        vendor: { name: 'Blessing', avatar: '/images/store (8).jpg' },
         media:  ''
     },
 ];
@@ -169,7 +169,7 @@ export default function HomePage() {
                                     <div className="flex items-center gap-1"
                                      onClick={(e) => {
                                         e.stopPropagation(); // Prevent parent click
-                                        router.push(`/vendor/${item.vendor.id}`);
+                                        router.push('/seller');
                                      }}>
                                         <img 
                                          src={item.vendor.avatar} 
